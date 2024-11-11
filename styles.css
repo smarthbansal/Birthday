@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* New class for arranging the beakers side by side */
+.beakers-container {
+    display: flex;
+    gap: 20px; /* Space between the two beakers */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Set max height for images so they align by size, with larger one shrinking */
+.image {
+    max-height: 100px; /* Set the maximum height */
+    width: auto;       /* Keeps the aspect ratio */
+}
+
+.heading {
+    font-size: 24px;
+    color: #4A90E2;
+    margin: 20px 0;
+}
+
+/* New class for arranging the animations in a row */
+.animation-container {
+    display: flex;
+    gap: 20px; /* Space between animations */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .image {
+        max-height: 80px; /* Reduce max height on smaller screens */
+    }
+
+    .beakers-container,
+    .animation-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}
+
