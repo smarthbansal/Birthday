@@ -52,7 +52,7 @@ body {
     position: fixed; /* Fixes the position relative to the viewport */
     bottom: 20px;    /* Distance from the bottom */
     right: 20px;     /* Distance from the right */
-    max-width: 10px; /* Smaller width */
+    max-width: 40px; /* Smaller width */
     height: auto;
     opacity: 0.825;    /* Slightly transparent */
 }
