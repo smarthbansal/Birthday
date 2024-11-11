@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     min-height: 100vh;
@@ -46,6 +47,15 @@ body {
     margin-top: 20px;
 }
 
+/* Developer logo at the bottom of the page */
+.developer-logo {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px;    /* Distance from the bottom */
+    right: 20px;     /* Distance from the right */
+    max-width: 40px; /* Smaller width */
+    height: auto;
+    opacity: 0.825;    /* Slightly transparent */
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .heading {
